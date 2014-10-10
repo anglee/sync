@@ -32,10 +32,15 @@ var barHandler = function(req, res) {
   res.write("req.body = " + JSON.stringify(req.body) + "\n");
   res.end();
 };
+var evalHandler = function (req, res) {
+  var result = eval(req.body.exp);
+  res.send(JSON.stringify(result));
+};
 
 app.route('/os').all(osHandler);
 app.route('/foo').all(fooHandler);
 app.route('/bar').all(barHandler);
+app.route('/eval').post(evalHandler);
 
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'), function () {
