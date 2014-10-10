@@ -27,12 +27,16 @@ $ curl http://frozen-waters-1211.herokuapp.com/foo
 req.method = GET
 req.url =/foo
 
+$ curl http://frozen-waters-1211.herokuapp.com/foo?first=ang
+req.method = GET
+req.url =/foo?first=ang
+req.query = {"first":"ang"}
+
 $ curl http://frozen-waters-1211.herokuapp.com/bar -d first=ang -d last=lee
-os.hostname() = 4fccecdb-224e-4d1b-bfb3-a476d80a2a90
+os.hostname() = 2f81e7ff-0faa-4b45-88c4-cb947b40f9d4
 req.method = POST
-req.url =/foo
+req.url =/bar
 req.query = {}
 req.body = {"first":"ang","last":"lee"}
-req.params = {}
 ```
 
