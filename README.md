@@ -11,3 +11,12 @@ $ git push heroku master
 $ heroku open
 $ heroku logs --tail
 ```
+
+goto: http://frozen-waters-1211.herokuapp.com
+
+Or
+
+```
+$ curl http://frozen-waters-1211.herokuapp.com
+```
+
