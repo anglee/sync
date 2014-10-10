@@ -1,5 +1,6 @@
 var express = require("express");
 var os = require('os');
+var _ = require('lodash');
 var bodyParser = require("body-parser");
 
 var app = express();
@@ -18,7 +19,9 @@ var osHandler = function(req, res) {
 var fooHandler = function(req, res) {
   res.write("req.method = " + req.method + "\n");
   res.write("req.url =" + req.url + "\n");
-  res.write("req.query = " + JSON.stringify(req.query) + "\n");
+  if (!_.isEmpty(req.query)) {
+    res.write("req.query = " + JSON.stringify(req.query) + "\n");
+  }
   res.end();
 };
 var barHandler = function(req, res) {
