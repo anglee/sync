@@ -8,5 +8,6 @@ To deploy on Heroku
 $ heroku login
 $ heroku create
 $ git push heroku master
-
+$ heroku open
+$ heroku logs --tail
 ```
