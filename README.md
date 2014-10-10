@@ -24,6 +24,7 @@ Or
 ```
 $ curl http://frozen-waters-1211.herokuapp.com
 What do you sync?
+
 $ curl http://frozen-waters-1211.herokuapp.com/foo
 req.method = GET
 req.url =/foo
