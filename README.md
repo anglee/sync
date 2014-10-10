@@ -26,5 +26,13 @@ What do you sync?
 $ curl http://frozen-waters-1211.herokuapp.com/foo
 req.method = GET
 req.url =/foo
+
+$ curl http://frozen-waters-1211.herokuapp.com/bar -d first=ang -d last=lee
+os.hostname() = 4fccecdb-224e-4d1b-bfb3-a476d80a2a90
+req.method = POST
+req.url =/foo
+req.query = {}
+req.body = {"first":"ang","last":"lee"}
+req.params = {}
 ```
 

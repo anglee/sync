@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/anglee/sync",
   "dependencies": {
+    "body-parser": "^1.9.0",
     "express": "^4.9.6",
     "lodash": "^2.4.1"
   }
