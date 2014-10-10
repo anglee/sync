@@ -1,0 +1,26 @@
+{
+  "name": "sync",
+  "version": "1.0.0",
+  "description": "Let me sync about it",
+  "main": "sync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anglee/sync.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Ang Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anglee/sync/issues"
+  },
+  "homepage": "https://github.com/anglee/sync",
+  "dependencies": {
+    "express": "^4.9.6",
+    "lodash": "^2.4.1"
+  }
+}
