@@ -1,4 +1,5 @@
 var express = require("express");
+var os = require('os');
 
 var app = express();
 
@@ -7,6 +8,7 @@ app.get('/', function (req, res) {
 });
 
 var handler = function(req, res) {
+  res.write("os.hostname() = " + os.hostname() + "\n");
   res.write("req.method = " + req.method + "\n");
   res.write("req.url =" + req.url + "\n");
   res.end();
