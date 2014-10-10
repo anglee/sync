@@ -16,6 +16,7 @@ $ heroku logs --tail
 goto:
 
 http://frozen-waters-1211.herokuapp.com
+
 http://frozen-waters-1211.herokuapp.com/foo
 
 Or
