@@ -40,5 +40,8 @@ req.method = POST
 req.url =/bar
 req.query = {}
 req.body = {"first":"ang","last":"lee"}
+
+$ curl http://frozen-waters-1211.herokuapp.com/eval --data-urlencode exp="new Date()"
+"2014-10-10T03:08:51.590Z"
 ```
 
